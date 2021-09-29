@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B55DEAB2-1E24-46D2-96C4-3E8B6491EC64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>utau_overflags</RootNamespace>
+    <AssemblyName>utau_overflags</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Calclators\CalculatorParser.cs" />
+    <Compile Include="Attributes\CalculatorPreparation.cs" />
+    <Compile Include="Attributes\Others\OthersEdit.cs" />
+    <Compile Include="Attributes\Others\OthersEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Others\OthersEditControl.Designer.cs">
+      <DependentUpon>OthersEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\ComparerPreparation.cs" />
+    <Compile Include="Attributes\Comparers\Comparer.cs" />
+    <Compile Include="Attributes\Comparers\ComparerParser.cs" />
+    <Compile Include="Attributes\Comparers\LessThanEqualsComparer.cs" />
+    <Compile Include="Attributes\Comparers\MoreThanEqualsComparer.cs" />
+    <Compile Include="Attributes\Comparers\EqualsComparer.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\FlagsAddition.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\EditType.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\FlagsCalculator.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\EditTypeParser.cs" />
+    <Compile Include="Attributes\ChoiceSet.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\FlagsReplacer.cs" />
+    <Compile Include="Attributes\Flags\EditTypes\FlagsOverWriter.cs" />
+    <Compile Include="Attributes\Flags\FlagsEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Flags\FlagsEditControl.Designer.cs">
+      <DependentUpon>FlagsEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Intensity\IntensityConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Intensity\IntensityConditionControl.Designer.cs">
+      <DependentUpon>IntensityConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Intensity\IntensityEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Intensity\IntensityEditControl.Designer.cs">
+      <DependentUpon>IntensityEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Length\LengthConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Length\LengthConditionControl.Designer.cs">
+      <DependentUpon>LengthConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conditions\ConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Moduration\ModurationEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Moduration\ModurationEditControl.Designer.cs">
+      <DependentUpon>ModurationEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Note\NoteConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Note\NoteConditionControl.Designer.cs">
+      <DependentUpon>NoteConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Vibrato\VbrEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Vibrato\VbrEditControl.Designer.cs">
+      <DependentUpon>VbrEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Lyric\Connectors\Connector.cs" />
+    <Compile Include="Attributes\Lyric\Connectors\ConnectorParser.cs" />
+    <Compile Include="Attributes\Lyric\Connectors\SuffixConnector.cs" />
+    <Compile Include="Attributes\Lyric\Connectors\PrefixConnector.cs" />
+    <Compile Include="Attributes\Lyric\Connectors\ReplaceConnector.cs" />
+    <Compile Include="Attributes\Lyric\LyricConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Lyric\LyricConditionControl.Designer.cs">
+      <DependentUpon>LyricConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Lyric\LyricEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attributes\Lyric\LyricEditControl.Designer.cs">
+      <DependentUpon>LyricEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attributes\Lyric\WordLikes\BackwardMatching.cs" />
+    <Compile Include="Attributes\Lyric\WordLikes\ForwardMatching.cs" />
+    <Compile Include="Attributes\Lyric\WordLikes\Matching.cs" />
+    <Compile Include="Attributes\Lyric\WordLikes\MatchingParser.cs" />
+    <Compile Include="Attributes\Lyric\WordLikes\PartialMatching.cs" />
+    <Compile Include="Attributes\Lyric\WordLikes\ExactMatching.cs" />
+    <Compile Include="Conditions\ConditionControlFactory.cs" />
+    <Compile Include="Edits\EditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BindingItem.cs" />
+    <Compile Include="ConditionList.cs" />
+    <Compile Include="ConditionSetter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionSetter.Designer.cs">
+      <DependentUpon>ConditionSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conditions\CondBase.cs" />
+    <Compile Include="Attributes\Intensity\IntensityCondition.cs" />
+    <Compile Include="Attributes\Length\LengthCondition.cs" />
+    <Compile Include="Attributes\Note\NoteCondition.cs" />
+    <Compile Include="Attributes\Lyric\LyricCondition.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="ContractList.cs" />
+    <Compile Include="Edits\EditBase.cs" />
+    <Compile Include="Attributes\Flags\FlagsEdit.cs" />
+    <Compile Include="Attributes\Intensity\IntensityEdit.cs" />
+    <Compile Include="Attributes\Vibrato\VbrEdit.cs" />
+    <Compile Include="Attributes\Lyric\LyricEdit.cs" />
+    <Compile Include="Attributes\Moduration\ModurationEdit.cs" />
+    <Compile Include="FlagCondition.cs" />
+    <Compile Include="FlagCouplers\Addition.cs" />
+    <Compile Include="FlagCouplers\FlagCoupler.cs" />
+    <Compile Include="FlagCouplers\Merger.cs" />
+    <Compile Include="FlagCouplers\OverWriter.cs" />
+    <Compile Include="FlagCouplers\Replacer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Binder.cs" />
+    <Compile Include="Forms\EditPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EditPanel.Designer.cs">
+      <DependentUpon>EditPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConditionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ConditionPanel.Designer.cs">
+      <DependentUpon>ConditionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ContractSetter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ContractSetter.Designer.cs">
+      <DependentUpon>ContractSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditDialogPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDialogPanel.Designer.cs">
+      <DependentUpon>EditDialogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SortableListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SortableListBox.Designer.cs">
+      <DependentUpon>SortableListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputNameForm.designer.cs">
+      <DependentUpon>InputNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppUtil.cs" />
+    <Compile Include="OldSetting\OldFlagCondition.cs" />
+    <Compile Include="OldSetting\OldConditionList.cs" />
+    <Compile Include="PresetController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordCouplers\WordCoupler.cs" />
+    <EmbeddedResource Include="Attributes\Flags\FlagsEditControl.resx">
+      <DependentUpon>FlagsEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Intensity\IntensityConditionControl.resx">
+      <DependentUpon>IntensityConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Intensity\IntensityEditControl.resx">
+      <DependentUpon>IntensityEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Length\LengthConditionControl.resx">
+      <DependentUpon>LengthConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Moduration\ModurationEditControl.resx">
+      <DependentUpon>ModurationEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Note\NoteConditionControl.resx">
+      <DependentUpon>NoteConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Others\OthersEditControl.resx">
+      <DependentUpon>OthersEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Vibrato\VbrEditControl.resx">
+      <DependentUpon>VbrEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Lyric\LyricConditionControl.resx">
+      <DependentUpon>LyricConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attributes\Lyric\LyricEditControl.resx">
+      <DependentUpon>LyricEditControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionSetter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConditionSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditPanel.resx">
+      <DependentUpon>EditPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConditionPanel.resx">
+      <DependentUpon>ConditionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ContractSetter.resx">
+      <DependentUpon>ContractSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditDialogPanel.resx">
+      <DependentUpon>EditDialogPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SortableListBox.resx">
+      <DependentUpon>SortableListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputNameForm.resx">
+      <DependentUpon>InputNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="preset\ろにテト！.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="preset\初期設定.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="preset\来年りっちゃん.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Condition_Others.png" />
+    <None Include="Resources\Condition_Moduration.png" />
+    <None Include="Resources\Condition_Lyric.png" />
+    <None Include="Resources\Condition_Vibrato.png" />
+    <None Include="Resources\Condition_Length.png" />
+    <None Include="Resources\Condition_Intensity.png" />
+    <None Include="Resources\Condition_Flags.png" />
+    <None Include="Resources\Condition_Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utau.Domain\Utau.Domain.csproj">
+      <Project>{978b1b8d-7478-43c3-abea-9e143f95e3de}</Project>
+      <Name>Utau.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utau.Infrastructure\Utau.Infrastructure.csproj">
+      <Project>{4F47A502-2518-4639-ABBA-01340B513A82}</Project>
+      <Name>Utau.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utau.OverFlags.Domain\Utau.OverFlags.Domain.csproj">
+      <Project>{a77fa773-7782-4aa9-b2ca-1ac1c20f95f2}</Project>
+      <Name>Utau.OverFlags.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utau.OverFlags.UseCase\Utau.OverFlags.Application.csproj">
+      <Project>{da1da572-d388-48db-aa54-a8a4930bebcf}</Project>
+      <Name>Utau.OverFlags.Application</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

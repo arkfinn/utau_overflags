@@ -1,0 +1,41 @@
+﻿@startuml
+
+class FlagCondition {
+}
+FlagCondition *-- ConditionList
+FlagCondition *-- EditList
+
+class ConditionList {
+}
+ConditionList o-- CondBase
+
+class EditList {
+}
+EditList o-- EditBase
+
+class CondBase {
+	+IsSatisfied() : boolean
+}
+
+class EditBase {
+	+Excute() : void
+}
+
+class ContractSetterVM {
+}
+ContractSetterVM --> ContractBuilder
+
+ContractBuilder --> Contract
+ContractVersion1500Builder --> Contract
+ContractFirstVersionBuilder --> Contract
+
+class Contract {
+	+Satisfy() : void
+}
+Contract *-- ConditionList
+Contract *-- EditList
+
+ContractSetter --> FlagCondition : before
+ContractSetter --> ContractSetterVM : after
+
+@enduml

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<ArrayOfFlagCondition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FlagCondition>
+    <Version>1500</Version>
+    <UseNoteCond>true</UseNoteCond>
+    <TargetNote>
+      <NoteNum>76</NoteNum>
+    </TargetNote>
+    <Operator>More</Operator>
+    <UseWordCond>false</UseWordCond>
+    <TargetWord />
+    <TargetWordLike>Equal</TargetWordLike>
+    <UseFlagsEdit>true</UseFlagsEdit>
+    <WriteFlagsType>OverWrite</WriteFlagsType>
+    <Flags>g+5h40H30L4</Flags>
+    <UseVbrEdit>false</UseVbrEdit>
+    <Vbr />
+    <UseIntensityEdit>false</UseIntensityEdit>
+    <Intensity>0</Intensity>
+    <IntensityCalcType>Set</IntensityCalcType>
+  </FlagCondition>
+  <FlagCondition>
+    <Version>1500</Version>
+    <UseNoteCond>true</UseNoteCond>
+    <TargetNote>
+      <NoteNum>72</NoteNum>
+    </TargetNote>
+    <Operator>More</Operator>
+    <UseWordCond>false</UseWordCond>
+    <TargetWord />
+    <TargetWordLike>Equal</TargetWordLike>
+    <UseFlagsEdit>true</UseFlagsEdit>
+    <WriteFlagsType>OverWrite</WriteFlagsType>
+    <Flags>g+3h30H20L4</Flags>
+    <UseVbrEdit>false</UseVbrEdit>
+    <Vbr />
+    <UseIntensityEdit>false</UseIntensityEdit>
+    <Intensity>0</Intensity>
+    <IntensityCalcType>Set</IntensityCalcType>
+  </FlagCondition>
+  <FlagCondition>
+    <Version>1500</Version>
+    <UseNoteCond>true</UseNoteCond>
+    <TargetNote>
+      <NoteNum>59</NoteNum>
+    </TargetNote>
+    <Operator>Less</Operator>
+    <UseWordCond>false</UseWordCond>
+    <TargetWord />
+    <TargetWordLike>Equal</TargetWordLike>
+    <UseFlagsEdit>true</UseFlagsEdit>
+    <WriteFlagsType>Add</WriteFlagsType>
+    <Flags>g-5L2E50</Flags>
+    <UseVbrEdit>false</UseVbrEdit>
+    <Vbr />
+    <UseIntensityEdit>false</UseIntensityEdit>
+    <Intensity>101</Intensity>
+    <IntensityCalcType>Set</IntensityCalcType>
+  </FlagCondition>
+  <FlagCondition>
+    <Version>1500</Version>
+    <UseNoteCond>true</UseNoteCond>
+    <TargetNote>
+      <NoteNum>64</NoteNum>
+    </TargetNote>
+    <Operator>Less</Operator>
+    <UseWordCond>false</UseWordCond>
+    <TargetWord />
+    <TargetWordLike>Equal</TargetWordLike>
+    <UseFlagsEdit>true</UseFlagsEdit>
+    <WriteFlagsType>Add</WriteFlagsType>
+    <Flags>g-3L2E40</Flags>
+    <UseVbrEdit>false</UseVbrEdit>
+    <Vbr />
+    <UseIntensityEdit>false</UseIntensityEdit>
+    <Intensity>0</Intensity>
+    <IntensityCalcType>Set</IntensityCalcType>
+  </FlagCondition>
+</ArrayOfFlagCondition>

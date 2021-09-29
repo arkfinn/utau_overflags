@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ContractList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <Contract>
+      <Conditions>
+        <Enabled>false</Enabled>
+        <Matching>
+          <Method>完全一致</Method>
+          <Value>あ</Value>
+        </Matching>
+      </Conditions>
+      <Edits>
+        <Enabled>false</Enabled>
+        <WordConnector>
+          <Word>い</Word>
+          <Method>セット</Method>
+        </WordConnector>
+      </Edits>
+    </Contract>
+  </Items>
+</ContractList>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfFlagCondition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FlagCondition>
+    <WriteType>Add</WriteType>
+    <TargetNote>
+      <NoteNum>60</NoteNum>
+    </TargetNote>
+    <Operator>More</Operator>
+    <Flags />
+  </FlagCondition>
+</ArrayOfFlagCondition>
