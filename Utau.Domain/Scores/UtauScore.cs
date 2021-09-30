@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Utau.Elements;
@@ -8,22 +7,6 @@ namespace Utau.Domain.Scores
 {
     public class UtauScore
     {
-        static public void setup(IScoreWriter writer, IScoreReader reader)
-        {
-            instance = new UtauScore(writer, reader);
-        }
-
-        static private UtauScore instance;
-
-        static public UtauScore getInstance()
-        {
-            if (instance == null)
-            {
-                throw new ApplicationException("必ずsetupを行って下さい");
-            }
-            return instance;
-        }
-
         public UtauElement SettingElement;
         private List<UtauElement> mElements;
 

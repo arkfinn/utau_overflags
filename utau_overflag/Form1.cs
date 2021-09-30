@@ -215,12 +215,14 @@ namespace utau_overflags
         {
         }
 
+        public UtauScore Score = null;
+
         private void buttonRun_Click(object sender, EventArgs e)
         {
-            if (!ShowSaveListDialog())
-                return;
+            if (Score == null) throw new InvalidOperationException("Score is null.");
+            if (!ShowSaveListDialog()) return;
 
-            UtauScore.getInstance().ElementForEach((int key, UtauElement prev, UtauElement now, UtauElement next) =>
+            Score.ElementForEach((int key, UtauElement prev, UtauElement now, UtauElement next) =>
             {
                 foreach (ContractItem var in Binder.ToList())
                 {
@@ -228,7 +230,7 @@ namespace utau_overflags
                     if (var.Item.Satisfy(now)) break;
                 }
             });
-            UtauScore.getInstance().output();
+            Score.output();
             this.Close();
         }
 
