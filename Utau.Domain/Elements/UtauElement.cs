@@ -20,6 +20,14 @@ namespace Utau.Elements
             BlockName = name;
         }
 
+        public UtauElement(string name, Dictionary<string, string> attributes) : this(name)
+        {
+            foreach (KeyValuePair<string, string> attribute in attributes)
+            {
+                Values.Add(attribute.Key, attribute.Value);
+            }
+        }
+
         private IDictionary<string, string> mValues = new Dictionary<string, string>();
 
         public IDictionary<string, string> Values

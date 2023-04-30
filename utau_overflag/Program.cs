@@ -19,8 +19,10 @@ namespace utau_overflags
             if (0 < args.Length)
             {
                 var filepath = args[0];
-                var form = new Form1();
-                form.Score = new UtauScore(new ScoreFileWriter(filepath), new ScoreFileReader(filepath));
+                var form = new Form1
+                {
+                    Score = new UtauScore(new ScoreFileWriter(filepath), new ScoreFileReader(filepath))
+                };
                 Application.Run(form);
             }
         }

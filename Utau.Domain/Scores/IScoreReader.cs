@@ -1,10 +1,10 @@
 ﻿using System;
-using System.IO;
+using Utau.Elements;
 
 namespace Utau.Domain.Scores
 {
     public interface IScoreReader
     {
-        void Read(Action<StreamReader> callback);
+        void Read(Action<UtauElement> callback);
     }
 }
