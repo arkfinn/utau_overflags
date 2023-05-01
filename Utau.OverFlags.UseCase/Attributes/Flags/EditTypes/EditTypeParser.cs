@@ -4,7 +4,7 @@ using System.Text;
 
 namespace utau_overflags.Attributes.Flags.EditTypes
 {
-    class EditTypeParser : ChoiceSet
+    public class EditTypeParser : ChoiceSet
     {
         public EditType Parse(string method, string value)
         {

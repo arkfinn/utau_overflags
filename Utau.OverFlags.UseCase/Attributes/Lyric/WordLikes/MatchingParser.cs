@@ -4,7 +4,7 @@ using System.Text;
 
 namespace utau_overflags.Attributes.Lyric.WordLikes
 {
-    class MatchingParser : ChoiceSet
+    public class MatchingParser : ChoiceSet
     {
         public Matching Parse(string method, string value)
         {

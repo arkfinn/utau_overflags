@@ -4,7 +4,7 @@ using System.Text;
 
 namespace utau_overflags.Attributes.Lyric.Connectors
 {
-    class ConnectorParser: ChoiceSet
+    public class ConnectorParser: ChoiceSet
     {
         public Connector Parse(string method, string word)
         {

@@ -3,7 +3,7 @@ using UtauPluginSet.Attributes.Calculators;
 
 namespace utau_overflags.Attributes
 {
-    internal class CalculatorPreparation
+    public class CalculatorPreparation
     {
         public CalculatorParser CreateParser()
         {
