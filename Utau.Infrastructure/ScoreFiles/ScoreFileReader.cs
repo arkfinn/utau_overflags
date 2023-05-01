@@ -18,6 +18,7 @@ namespace Utau.Infrastructure.ScoreFiles
 
         public void Read(Action<UtauElement> callback)
         {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             using (StreamReader sr = new StreamReader(Filepath, Encoding.GetEncoding("Shift_JIS")))
             {
                 var line = "";
