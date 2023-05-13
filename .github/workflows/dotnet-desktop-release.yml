@@ -89,7 +89,7 @@ jobs:
     - name: Package for windows
       # if: matrix.target == 'windows'
       run: |
-        powershell Compress-Archive -Path ${{ env.Wap_Project_Directory }}\dist\ -DestinationPath ./a-9_overflags.zip
+        powershell Compress-Archive -Path ${{ env.Wap_Project_Directory }}\dist\* -DestinationPath ./a-9_overflags.zip
 
     # - name: Create Release
     #   id: create_release
