@@ -26,7 +26,7 @@ jobs:
     steps:
     - name: Get the version
       id: get_version
-      run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+      run: echo VERSION=$(echo $GITHUB_REF | cut -d / -f 3) >> $GITHUB_OUTPUT
 
     - name: Checkout
       uses: actions/checkout@v3
@@ -81,10 +81,15 @@ jobs:
     #     name: MSIX Package
     #     path: ${{ env.Wap_Project_Directory }}\dist\
 
-    - name: Create Zip File - Windows
-      uses: montudor/action-zip@v0.1.0
-      with:
-        args: zip -r ./a-9_overflags.zip  ${{ env.Wap_Project_Directory }}\dist\
+    # - name: Create Zip File - Windows
+    #   uses: montudor/action-zip@v0.1.0
+    #   with:
+    #     args: zip -r ./a-9_overflags.zip  ${{ env.Wap_Project_Directory }}\dist\
+
+    - name: Package for windows
+      # if: matrix.target == 'windows'
+      run: |
+        powershell Compress-Archive -Path ${{ env.Wap_Project_Directory }}\dist\ -DestinationPath ./a-9_overflags.zip
 
     # - name: Create Release
     #   id: create_release
@@ -96,12 +101,6 @@ jobs:
     #     release_name: ${{ steps.get_version.outputs.VERSION }}
     #     draft: false
     #     prerelease: false
-
-    - name: Get url to upload to release from artifact
-      id: get_url
-      run: |
-        url=$(cat artifact/url.txt)
-        echo "##[set-output name=upload_url;]$url"
     
     - name: Upload Release Asset
       id: upload-release-asset
