@@ -16,8 +16,8 @@ jobs:
 
     env:
       Solution_Name: utau_overflag.sln
-      Wap_Project_Directory: utau_overflags
-      Wap_Project_Path: utau_overflags\utau_overflags.csproj
+      Wap_Project_Directory: utau_overflag
+      Wap_Project_Path: utau_overflag\utau_overflags.csproj
 
     outputs:
       version: ${{ steps.step_version.outputs.version }}
