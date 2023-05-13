@@ -146,6 +146,7 @@ namespace utau_overflags.Forms
             using (var form = CreateForm("条件の新規追加", new Size(400, 280)))
             {
                 var panel = new ConditionPanel();
+                form.Height = panel.Height + 40;
                 panel.Dock = DockStyle.Fill;
                 panel.OnButtonClicked += (s, args) =>
                 {
@@ -165,9 +166,10 @@ namespace utau_overflags.Forms
 
         private void listEdits_OnAddRequest(object sender, EventArgs e)
         {
-            using (var form = CreateForm("編集内容の新規追加", new Size(400, 324)))
+            using (var form = CreateForm("編集内容の新規追加", new Size(400, 360)))
             {
                 var panel = new EditPanel();
+                form.Height = panel.Height + 40;
                 panel.Dock = DockStyle.Fill;
                 panel.OnButtonClicked += (s, args) =>
                 {

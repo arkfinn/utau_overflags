@@ -28,164 +28,173 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.sortableListBox1 = new utau_overflags.Forms.SortableListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.contractSetter1 = new utau_overflags.Forms.ContractSetter();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.buttonRun = new System.Windows.Forms.Button();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.SuspendLayout();
+            splitContainer1 = new System.Windows.Forms.SplitContainer();
+            sortableListBox1 = new Forms.SortableListBox();
+            button2 = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
+            contractSetter1 = new Forms.ContractSetter();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            button5 = new System.Windows.Forms.Button();
+            buttonRun = new System.Windows.Forms.Button();
+            toolTip1 = new System.Windows.Forms.ToolTip(components);
+            label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitContainer1.Location = new System.Drawing.Point(1, 22);
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            splitContainer1.Location = new System.Drawing.Point(1, 28);
+            splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.sortableListBox1);
+            splitContainer1.Panel1.Controls.Add(sortableListBox1);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
-            this.splitContainer1.Panel2.Controls.Add(this.button1);
-            this.splitContainer1.Panel2.Controls.Add(this.contractSetter1);
-            this.splitContainer1.Size = new System.Drawing.Size(630, 356);
-            this.splitContainer1.SplitterDistance = 207;
-            this.splitContainer1.TabIndex = 0;
+            splitContainer1.Panel2.Controls.Add(button2);
+            splitContainer1.Panel2.Controls.Add(button1);
+            splitContainer1.Panel2.Controls.Add(contractSetter1);
+            splitContainer1.Size = new System.Drawing.Size(735, 445);
+            splitContainer1.SplitterDistance = 241;
+            splitContainer1.SplitterWidth = 5;
+            splitContainer1.TabIndex = 0;
             // 
             // sortableListBox1
             // 
-            this.sortableListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sortableListBox1.Location = new System.Drawing.Point(0, 0);
-            this.sortableListBox1.MinimumCount = 1;
-            this.sortableListBox1.Name = "sortableListBox1";
-            this.sortableListBox1.SelectedIndex = -1;
-            this.sortableListBox1.SelectedItem = null;
-            this.sortableListBox1.Size = new System.Drawing.Size(203, 352);
-            this.sortableListBox1.TabIndex = 5;
-            this.sortableListBox1.OnAddRequest += new System.EventHandler(this.sortableListBox1_OnAddRequest);
-            this.sortableListBox1.OnSelectedIndexChanged += new System.EventHandler(this.sortableListBox1_OnSelectedIndexChanged);
+            sortableListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            sortableListBox1.Location = new System.Drawing.Point(0, 0);
+            sortableListBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            sortableListBox1.MinimumCount = 1;
+            sortableListBox1.Name = "sortableListBox1";
+            sortableListBox1.SelectedIndex = -1;
+            sortableListBox1.SelectedItem = null;
+            sortableListBox1.Size = new System.Drawing.Size(237, 441);
+            sortableListBox1.TabIndex = 5;
+            sortableListBox1.OnAddRequest += sortableListBox1_OnAddRequest;
+            sortableListBox1.OnSelectedIndexChanged += sortableListBox1_OnSelectedIndexChanged;
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(3, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 20);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "リセット";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
+            button2.BackColor = System.Drawing.Color.Red;
+            button2.Enabled = false;
+            button2.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            button2.ForeColor = System.Drawing.Color.White;
+            button2.Location = new System.Drawing.Point(4, 407);
+            button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(70, 25);
+            button2.TabIndex = 2;
+            button2.Text = "リセット";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(337, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "確定";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.conditionSetter1_ConditionSaved);
+            button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            button1.Enabled = false;
+            button1.Location = new System.Drawing.Point(394, 407);
+            button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(88, 29);
+            button1.TabIndex = 1;
+            button1.Text = "確定";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += conditionSetter1_ConditionSaved;
             // 
             // contractSetter1
             // 
-            this.contractSetter1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.contractSetter1.Enabled = false;
-            this.contractSetter1.Location = new System.Drawing.Point(3, 3);
-            this.contractSetter1.Name = "contractSetter1";
-            this.contractSetter1.Size = new System.Drawing.Size(409, 319);
-            this.contractSetter1.TabIndex = 0;
-            this.contractSetter1.OnChanged += new System.EventHandler<utau_overflags.Forms.ChangedEventArgs>(this.contractSetter1_OnChanged);
+            contractSetter1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            contractSetter1.Enabled = false;
+            contractSetter1.Location = new System.Drawing.Point(4, 4);
+            contractSetter1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            contractSetter1.Name = "contractSetter1";
+            contractSetter1.Size = new System.Drawing.Size(478, 400);
+            contractSetter1.TabIndex = 0;
+            contractSetter1.OnChanged += contractSetter1_OnChanged;
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 1);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 20);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(7, 1);
+            comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(148, 23);
+            comboBox1.TabIndex = 1;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // button5
             // 
-            this.button5.Enabled = false;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(139, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(17, 17);
-            this.button5.TabIndex = 2;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Enabled = false;
+            button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button5.Image = (System.Drawing.Image)resources.GetObject("button5.Image");
+            button5.Location = new System.Drawing.Point(162, 2);
+            button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(20, 21);
+            button5.TabIndex = 2;
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // buttonRun
             // 
-            this.buttonRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRun.Location = new System.Drawing.Point(492, 383);
-            this.buttonRun.Name = "buttonRun";
-            this.buttonRun.Size = new System.Drawing.Size(136, 23);
-            this.buttonRun.TabIndex = 3;
-            this.buttonRun.Text = "この設定で処理実行";
-            this.buttonRun.UseVisualStyleBackColor = true;
-            this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
+            buttonRun.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            buttonRun.Location = new System.Drawing.Point(574, 479);
+            buttonRun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            buttonRun.Name = "buttonRun";
+            buttonRun.Size = new System.Drawing.Size(159, 29);
+            buttonRun.TabIndex = 3;
+            buttonRun.Text = "この設定で処理実行";
+            buttonRun.UseVisualStyleBackColor = true;
+            buttonRun.Click += buttonRun_Click;
             // 
             // toolTip1
             // 
-            this.toolTip1.IsBalloon = true;
+            toolTip1.IsBalloon = true;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(207, 388);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 12);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "確定されていない修正があります。修正を完了して下さい。";
-            this.label1.Visible = false;
+            label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            label1.AutoSize = true;
+            label1.ForeColor = System.Drawing.Color.Red;
+            label1.Location = new System.Drawing.Point(241, 485);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(280, 15);
+            label1.TabIndex = 4;
+            label1.Text = "確定されていない修正があります。修正を完了して下さい。";
+            label1.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 408);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonRun);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.splitContainer1);
-            this.Name = "Form1";
-            this.Text = "OverFlags";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(735, 510);
+            Controls.Add(label1);
+            Controls.Add(buttonRun);
+            Controls.Add(button5);
+            Controls.Add(comboBox1);
+            Controls.Add(splitContainer1);
+            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Name = "Form1";
+            Text = "OverFlags";
+            Load += Form1_Load;
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
