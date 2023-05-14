@@ -11,10 +11,18 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="InputNameForm.designer.cs~RFfad62c2.TMP" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Utau.Domain\Utau.Domain.csproj" />
     <ProjectReference Include="..\Utau.Infrastructure\Utau.Infrastructure.csproj" />
     <ProjectReference Include="..\Utau.OverFlags.Domain\Utau.OverFlags.Domain.csproj" />
     <ProjectReference Include="..\Utau.OverFlags.UseCase\Utau.OverFlags.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Attributes\Note\NoteEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="plugin.txt">

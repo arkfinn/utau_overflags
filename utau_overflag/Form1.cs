@@ -124,6 +124,7 @@ namespace utau_overflags
         {
             using (InputNameForm form = new InputNameForm())
             {
+                form.Size = new System.Drawing.Size(320, 208);
                 form.NowPreset = _nowPreset;
                 if (form.ShowDialog() == DialogResult.OK)
                 {
@@ -272,7 +273,7 @@ namespace utau_overflags
             buttonRun.Enabled = !e.Changed;
             label1.Visible = e.Changed;
             button1.Enabled = e.Changed;
-            button2.Enabled = !e.Changed;
+            button2.Enabled = e.Changed;
         }
     }
 

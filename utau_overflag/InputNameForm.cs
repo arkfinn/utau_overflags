@@ -26,7 +26,7 @@ namespace utau_overflags
             }
         }
 
-        private string _nowPreset="";
+        private string _nowPreset = "";
 
         public string NowPreset
         {
