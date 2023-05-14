@@ -26,7 +26,7 @@ namespace utau_overflags.Forms
             InitializeComponent();
         }
 
-       public event EventHandler<EditEventArgs> OnButtonClicked = (s, e) => { };
+        public event EventHandler<EditEventArgs> OnButtonClicked = (s, e) => { };
         private void invokeButtonClicked(EditBase condition)
         {
             OnButtonClicked.Invoke(this, new EditEventArgs(condition));
@@ -62,9 +62,13 @@ namespace utau_overflags.Forms
             invokeButtonClicked(new OthersEdit());
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            invokeButtonClicked(new NoteEdit());
+        }
     }
 
-    public class EditEventArgs:EventArgs
+    public class EditEventArgs : EventArgs
     {
         public readonly EditBase Edit;
 

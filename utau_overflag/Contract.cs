@@ -39,6 +39,7 @@ namespace utau_overflags
         [XmlElement(typeof(VbrEdit))]
         [XmlElement(typeof(FlagsEdit))]
         [XmlElement(typeof(OthersEdit))]
+        [XmlElement(typeof(NoteEdit))]
         public List<EditBase> Edits;
 
         public Contract(List<CondBase> conditions, List<EditBase> edits)

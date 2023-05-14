@@ -28,155 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            button7 = new System.Windows.Forms.Button();
+            button6 = new System.Windows.Forms.Button();
+            button5 = new System.Windows.Forms.Button();
+            button4 = new System.Windows.Forms.Button();
+            button3 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            panel1 = new System.Windows.Forms.Panel();
+            button1 = new System.Windows.Forms.Button();
+            button8 = new System.Windows.Forms.Button();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(365, 281);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(button8);
+            groupBox1.Controls.Add(button7);
+            groupBox1.Controls.Add(button6);
+            groupBox1.Controls.Add(button5);
+            groupBox1.Controls.Add(button4);
+            groupBox1.Controls.Add(button3);
+            groupBox1.Controls.Add(button2);
+            groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            groupBox1.Location = new System.Drawing.Point(0, 0);
+            groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            groupBox1.Size = new System.Drawing.Size(426, 402);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
             // 
             // button7
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Image = global::utau_overflags.Properties.Resources.Condition_Others;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button7.Location = new System.Drawing.Point(6, 208);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(353, 32);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "　自由指定(Others)";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            button7.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button7.Image = Properties.Resources.Condition_Others;
+            button7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button7.Location = new System.Drawing.Point(7, 309);
+            button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button7.Name = "button7";
+            button7.Size = new System.Drawing.Size(412, 40);
+            button7.TabIndex = 5;
+            button7.Text = "　自由指定(Others)";
+            button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Image = global::utau_overflags.Properties.Resources.Condition_Vibrato;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button6.Location = new System.Drawing.Point(6, 170);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(353, 32);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "　ビブラート(VBR)";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button6.Image = Properties.Resources.Condition_Vibrato;
+            button6.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button6.Location = new System.Drawing.Point(7, 261);
+            button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(412, 40);
+            button6.TabIndex = 4;
+            button6.Text = "　ビブラート(VBR)";
+            button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Image = global::utau_overflags.Properties.Resources.Condition_Lyric;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button5.Location = new System.Drawing.Point(6, 94);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(353, 32);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "　歌詞(Lyric)";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button5.Image = Properties.Resources.Condition_Lyric;
+            button5.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button5.Location = new System.Drawing.Point(7, 165);
+            button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button5.Name = "button5";
+            button5.Size = new System.Drawing.Size(412, 40);
+            button5.TabIndex = 3;
+            button5.Text = "　歌詞(Lyric)";
+            button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Image = global::utau_overflags.Properties.Resources.Condition_Moduration;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button4.Location = new System.Drawing.Point(6, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(353, 32);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "　モジュレーション(Moduration)";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button4.Image = Properties.Resources.Condition_Moduration;
+            button4.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button4.Location = new System.Drawing.Point(7, 213);
+            button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button4.Name = "button4";
+            button4.Size = new System.Drawing.Size(412, 40);
+            button4.TabIndex = 2;
+            button4.Text = "　モジュレーション(Moduration)";
+            button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Image = global::utau_overflags.Properties.Resources.Condition_Intensity;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button3.Location = new System.Drawing.Point(6, 56);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(353, 32);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "　音量(Intensity)";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button3.Image = Properties.Resources.Condition_Intensity;
+            button3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button3.Location = new System.Drawing.Point(6, 117);
+            button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button3.Name = "button3";
+            button3.Size = new System.Drawing.Size(412, 40);
+            button3.TabIndex = 1;
+            button3.Text = "　音量(Intensity)";
+            button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = global::utau_overflags.Properties.Resources.Condition_Flags;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button2.Location = new System.Drawing.Point(6, 18);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(353, 32);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "　フラグ(Flags)";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button2.Image = Properties.Resources.Condition_Flags;
+            button2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button2.Location = new System.Drawing.Point(7, 69);
+            button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(412, 40);
+            button2.TabIndex = 0;
+            button2.Text = "　フラグ(Flags)";
+            button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 245);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 36);
-            this.panel1.TabIndex = 0;
+            panel1.Controls.Add(button1);
+            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel1.Location = new System.Drawing.Point(0, 357);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(426, 45);
+            panel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Location = new System.Drawing.Point(3, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "キャンセル";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            button1.Location = new System.Drawing.Point(4, 9);
+            button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(88, 29);
+            button1.TabIndex = 0;
+            button1.Text = "キャンセル";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            button8.Image = Properties.Resources.Condition_Note;
+            button8.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            button8.Location = new System.Drawing.Point(7, 21);
+            button8.Margin = new System.Windows.Forms.Padding(4);
+            button8.Name = "button8";
+            button8.Size = new System.Drawing.Size(412, 40);
+            button8.TabIndex = 6;
+            button8.Text = "　音程(Note)";
+            button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // EditPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "EditPanel";
-            this.Size = new System.Drawing.Size(365, 281);
-            this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(panel1);
+            Controls.Add(groupBox1);
+            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Name = "EditPanel";
+            Size = new System.Drawing.Size(426, 402);
+            groupBox1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -190,6 +211,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-
+        private System.Windows.Forms.Button button8;
     }
 }
