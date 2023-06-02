@@ -34,9 +34,5 @@ namespace utau_overflags.Attributes.Flags
             return "Flags" + EditType.ToString();
         }
 
-        public override EditControl CreateControl()
-        {
-            return new FlagsEditControl(this);
-        }
     }
 }

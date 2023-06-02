@@ -3,15 +3,15 @@ using Utau.Elements;
 using Utau.OverFlags.Domain.CalculateCommands;
 using utau_overflags.Edits;
 
-namespace utau_overflags.Attributes.Intensity
+namespace utau_overflags.Attributes.Moduration
 {
-    public class IntensityEdit : EditBase
+    public class ModurationEdit : EditBase
     {
-        public IntensityEdit() : this(new AdditionCommand(0))
+        public ModurationEdit() : this(new AdditionCommand(0))
         {
         }
 
-        public IntensityEdit(CalculateCommand calc)
+        public ModurationEdit(CalculateCommand calc)
         {
             Calculator = calc;
         }
@@ -25,18 +25,14 @@ namespace utau_overflags.Attributes.Intensity
 
         override protected bool RunEdit(UtauElement elm)
         {
-            elm.Intensity = Calculator.Calculate(elm.Intensity);
+            elm.Moduration = Calculator.Calculate(elm.Moduration);
             return true;
         }
 
         override public string ToString()
         {
-            return "音量を" + Calculator.ToString();
+            return "モジュレーションを" + Calculator.ToString();
         }
 
-        public override EditControl CreateControl()
-        {
-            return new IntensityEditControl(this);
-        }
     }
 }

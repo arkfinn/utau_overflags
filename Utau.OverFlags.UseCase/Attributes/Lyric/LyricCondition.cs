@@ -37,10 +37,5 @@ namespace utau_overflags.Attributes.Lyric
         {
             return Matching.ToString();
         }
-
-        public override ConditionControl CreateControl()
-        {
-            return new LyricConditionControl(this);
-        }
     }
 }

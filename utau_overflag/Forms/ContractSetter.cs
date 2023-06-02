@@ -103,32 +103,12 @@ namespace utau_overflags.Forms
 
         private CondBase CallConditionEditDialog(CondBase item)
         {
-            var control = item.CreateControl();
-            using (var form = CreateForm("条件の設定", new Size(400, 160)))
-            {
-                form.Controls.Add(CreatePanel(control));
-                form.ShowDialog();
-                return (form.DialogResult == DialogResult.OK) ? control.Export() : null;
-            }
+            return new ConditionControlProvider(item).Call("条件の設定");
         }
 
         private EditBase CallEditEditDialog(EditBase item)
         {
-            var control = item.CreateControl();
-            using (var form = CreateForm("編集内容の設定", new Size(400, 160)))
-            {
-                form.Controls.Add(CreatePanel(control));
-                form.ShowDialog();
-                return (form.DialogResult == DialogResult.OK) ? control.Export() : null;
-            }
-        }
-
-        private Control CreatePanel(Control child)
-        {
-            var panel = new EditDialogPanel();
-            panel.Dock = DockStyle.Fill;
-            panel.AddContents(child);
-            return panel;
+            return new EditControlProvider(item).Call("編集内容の設定");
         }
 
         private Form CreateForm(string title, Size size)

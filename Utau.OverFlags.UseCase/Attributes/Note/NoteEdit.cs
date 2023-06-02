@@ -31,9 +31,5 @@ namespace utau_overflags.Attributes.Note
             return "音階を"+Utau.Domain.Notes.Note.ByNoteNumber(NoteNum).ToString() + "に変更";
         }
 
-        public override EditControl CreateControl()
-        {
-            return new NoteEditControl(this);
-        }
     }
 }

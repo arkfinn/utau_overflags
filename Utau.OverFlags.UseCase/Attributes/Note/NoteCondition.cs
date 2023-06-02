@@ -3,15 +3,15 @@ using Utau.Elements;
 using utau_overflags.Attributes.Comparers;
 using utau_overflags.Conditions;
 
-namespace utau_overflags.Attributes.Intensity
+namespace utau_overflags.Attributes.Note
 {
-    public class IntensityCondition : CondBase
+    public class NoteCondition : CondBase
     {
-        public IntensityCondition() : this(new EqualsComparer(0))
+        public NoteCondition() : this(new LessThanEqualsComparer(60))
         {
         }
 
-        public IntensityCondition(Comparer comparer)
+        public NoteCondition(Comparer comparer)
         {
             Comparer = comparer;
         }
@@ -22,19 +22,14 @@ namespace utau_overflags.Attributes.Intensity
         [XmlElement(typeof(MoreThanEqualsComparer))]
         public Comparer Comparer;
 
-        override protected bool DecideApply(UtauElement elm)
+        protected override bool DecideApply(UtauElement elm)
         {
-            return Comparer.Evaluate(elm.Intensity);
+            return Comparer.Evaluate(elm.NoteNum);
         }
 
         override public string ToString()
         {
-            return "音量が" + Comparer.ToString();
-        }
-
-        public override ConditionControl CreateControl()
-        {
-            return new IntensityConditionControl(this);
+            return Utau.Domain.Notes.Note.ByNoteNumber(Comparer.Value).ToString() + Comparer.Method;
         }
     }
 }

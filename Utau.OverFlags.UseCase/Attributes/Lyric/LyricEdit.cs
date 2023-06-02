@@ -33,9 +33,5 @@ namespace utau_overflags.Attributes.Lyric
             return "歌詞に" + WordConnector.ToString();
         }
 
-        public override EditControl CreateControl()
-        {
-            return new LyricEditControl(this);
-        }
     }
 }

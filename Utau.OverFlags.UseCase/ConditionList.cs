@@ -14,12 +14,12 @@ namespace utau_overflags
     {
 
 
-        public void Output(string fn)
+        //public void Output(string fn)
 
-        {
-            var preset = new PresetController();
-            preset.Write<ConditionList>(fn, this);
-        }
+        //{
+        //    var preset = new PresetController();
+        //    preset.Write<ConditionList>(fn, this);
+        //}
 
         static public ConditionList _FromFile(string path)
         {

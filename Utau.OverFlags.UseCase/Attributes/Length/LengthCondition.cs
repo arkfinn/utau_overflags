@@ -31,10 +31,5 @@ namespace utau_overflags.Attributes.Length
         {
             return "音長が" + Comparer.ToString();
         }
-
-        public override ConditionControl CreateControl()
-        {
-            return new LengthConditionControl(this);
-        }
     }
 }

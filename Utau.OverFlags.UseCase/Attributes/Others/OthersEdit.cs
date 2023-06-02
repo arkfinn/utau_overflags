@@ -30,9 +30,5 @@ namespace utau_overflags.Attributes.Others
             return Key + "に「" + Value + "」を設定";
         }
 
-        public override EditControl CreateControl()
-        {
-            return new OthersEditControl(this);
-        }
     }
 }

@@ -24,7 +24,5 @@ namespace utau_overflags.Conditions
         }
 
         abstract protected bool DecideApply(UtauElement elm);
-
-        abstract public ConditionControl CreateControl();
     }
 }

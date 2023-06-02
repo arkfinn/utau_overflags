@@ -27,9 +27,5 @@ namespace utau_overflags.Attributes.Vibrato
             return "VBRに「" + Vbr + "」を設定";
         }
 
-        public override EditControl CreateControl()
-        {
-            return new VbrEditControl(this);
-        }
     }
 }

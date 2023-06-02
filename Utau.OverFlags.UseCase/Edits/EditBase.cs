@@ -22,7 +22,5 @@ namespace utau_overflags.Edits
         }
 
         abstract protected bool RunEdit(UtauElement elm);
-
-        abstract public EditControl CreateControl();
     }
 }
