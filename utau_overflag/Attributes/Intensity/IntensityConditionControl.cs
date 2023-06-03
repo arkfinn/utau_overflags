@@ -5,8 +5,9 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using utau_overflags.Attributes.Comparers;
 using utau_overflags.Conditions;
+using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes;
 
 namespace utau_overflags.Attributes.Intensity
 {

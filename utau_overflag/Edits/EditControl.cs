@@ -1,4 +1,5 @@
 ﻿using System;
+using Utau.OverFlags.Domain.Attributes;
 using utau_overflags.Attributes;
 namespace utau_overflags.Edits
 {

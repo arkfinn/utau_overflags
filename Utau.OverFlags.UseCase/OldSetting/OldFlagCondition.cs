@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml;
-using Utau.OverFlags.Domain.CalculateCommands;
-using utau_overflags.Attributes.Comparers;
-using utau_overflags.Attributes.Flags;
-using utau_overflags.Attributes.Flags.EditTypes;
-using utau_overflags.Attributes.Intensity;
-using utau_overflags.Attributes.Length;
-using utau_overflags.Attributes.Lyric;
-using utau_overflags.Attributes.Lyric.Connectors;
-using utau_overflags.Attributes.Lyric.WordLikes;
-using utau_overflags.Attributes.Moduration;
-using utau_overflags.Attributes.Note;
-using utau_overflags.Attributes.Vibrato;
-using utau_overflags.Conditions;
-using utau_overflags.Edits;
-using UtauPluginSet.Attributes.Calculators;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Flags;
+using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes.Length;
+using Utau.OverFlags.Domain.Attributes.Lyric;
+using Utau.OverFlags.Domain.Attributes.Moduration;
+using Utau.OverFlags.Domain.Attributes.Note;
+using Utau.OverFlags.Domain.Attributes.Vibrato;
+using Utau.OverFlags.Domain.Choices;
+using Utau.OverFlags.Domain.Commands.Calculations;
+using Utau.OverFlags.Domain.Commands.Comparers;
+using Utau.OverFlags.Domain.Commands.Connectors;
+using Utau.OverFlags.Domain.Commands.Flags;
+using Utau.OverFlags.Domain.Commands.WordLikes;
+using Utau.OverFlags.Domain.Contracts;
 
 namespace utau_overflags.OldSetting
 {
@@ -67,7 +67,7 @@ namespace utau_overflags.OldSetting
             if (method == "")
                 return new ExactMatching(value);
 
-            MatchingParser parser = new MatchingParser();
+            MatchingChoice parser = new MatchingChoice();
             return parser.Parse(method, value);
         }
 
@@ -93,7 +93,7 @@ namespace utau_overflags.OldSetting
             if (method == "")
                 return new MoreThanEqualsComparer(value);
 
-            ComparerParser parser = new ComparerParser();
+            ComparerChoice parser = new ComparerChoice();
             return parser.Parse(method, value);
         }
 
@@ -126,12 +126,12 @@ namespace utau_overflags.OldSetting
             return cond;
         }
 
-        private EditType CreateEditType(string method, string value)
+        private FlagsCommand CreateEditType(string method, string value)
         {
             if (method == "")
-                return new utau_overflags.Attributes.Flags.EditTypes.FlagsAddition(value);
+                return new FlagsAddition(value);
 
-            return new EditTypeParser().Parse(method, value);
+            return new EditTypeChoice().Parse(method, value);
         }
 
         #endregion 操作_Flags_未
@@ -170,7 +170,7 @@ namespace utau_overflags.OldSetting
             if (method == "")
                 return new AssignmentCommand(value);
 
-            CalculatorParser parser = new CalculatorParser();
+            CalculateCommandChoice parser = new CalculateCommandChoice();
             return parser.Parse(method, value);
         }
 
@@ -194,7 +194,7 @@ namespace utau_overflags.OldSetting
             if (method == "")
                 return new ReplaceConnector(value);
 
-            ConnectorParser parser = new ConnectorParser();
+            ConnectorChoice parser = new ConnectorChoice();
             return parser.Parse(method, value);
         }
 

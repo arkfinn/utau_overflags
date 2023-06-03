@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using utau_overflags.Conditions;
-using utau_overflags.Attributes.Note;
-using utau_overflags.Attributes.Intensity;
-using utau_overflags.Attributes.Length;
-using utau_overflags.Attributes.Lyric;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Note;
+using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes.Length;
+using Utau.OverFlags.Domain.Attributes.Lyric;
 
 namespace utau_overflags.Forms
 {

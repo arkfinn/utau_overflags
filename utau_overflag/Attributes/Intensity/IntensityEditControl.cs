@@ -1,4 +1,6 @@
 ﻿using System;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Intensity;
 using utau_overflags.Edits;
 
 namespace utau_overflags.Attributes.Intensity

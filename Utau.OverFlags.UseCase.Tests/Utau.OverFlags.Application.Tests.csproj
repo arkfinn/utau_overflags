@@ -14,9 +14,6 @@
     <ProjectReference Include="..\Utau.OverFlags.UseCase\Utau.OverFlags.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Attributes\Note\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Update="TestFiles\contract_list.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

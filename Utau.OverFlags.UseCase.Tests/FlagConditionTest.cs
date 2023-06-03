@@ -1,21 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
-using utau_overflags;
-using UtauPluginSet;
-using utau_overflags.Attributes.Lyric;
-using utau_overflags.Attributes.Lyric.WordLikes;
-using utau_overflags.Attributes.Lyric.Connectors;
-using utau_overflags.Attributes.Vibrato;
-using utau_overflags.Attributes.Intensity;
-using utau_overflags.Attributes.Comparers;
-using utau_overflags.Attributes.Length;
-using utau_overflags.Attributes.Moduration;
-using utau_overflags.Attributes.Flags;
-using utau_overflags.Attributes.Flags.EditTypes;
-
-/*
+﻿/*
  * 2011/6/25
  * 
  * useフラグを考慮すること

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using utau_overflags.Attributes.Comparers;
+using Utau.OverFlags.Domain.Commands.Comparers;
 
 namespace utau_overflags.Attributes
 {
     class ComparerPreparation
     {
-        public ComparerParser CreateParser()
+        public ComparerChoice CreateParser()
         {
-            return new ComparerParser();
+            return new ComparerChoice();
         }
 
         public Comparer CreateComparer(ComboBox combo, int value)

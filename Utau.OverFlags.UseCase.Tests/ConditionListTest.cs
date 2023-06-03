@@ -1,13 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using utau_overflags.Attributes.Lyric;
-using utau_overflags.Attributes.Lyric.Connectors;
-using utau_overflags.Attributes.Lyric.WordLikes;
-using utau_overflags.Conditions;
-using utau_overflags.Edits;
 
 namespace utau_overflags
 {

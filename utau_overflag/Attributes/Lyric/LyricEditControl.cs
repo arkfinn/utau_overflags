@@ -5,8 +5,11 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using utau_overflags.Attributes.Lyric.Connectors;
 using utau_overflags.Edits;
+using Utau.OverFlags.Domain.Commands.Connectors;
+using Utau.OverFlags.Domain.Choices;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Lyric;
 
 namespace utau_overflags.Attributes.Lyric
 {
@@ -24,9 +27,9 @@ namespace utau_overflags.Attributes.Lyric
             Import(edit);
         }
 
-        private ConnectorParser CreateParser()
+        private ConnectorChoice CreateParser()
         {
-            return new ConnectorParser();
+            return new ConnectorChoice();
         }
 
         private void formChanged(object sender, EventArgs e)

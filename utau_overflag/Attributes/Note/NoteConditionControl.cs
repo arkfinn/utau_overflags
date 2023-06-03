@@ -1,5 +1,7 @@
 ﻿using System;
 using Utau.OverFlags.Application;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Note;
 using utau_overflags.Conditions;
 
 namespace utau_overflags.Attributes.Note

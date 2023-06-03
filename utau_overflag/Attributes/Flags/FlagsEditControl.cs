@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Windows.Forms;
-using utau_overflags.Attributes.Flags.EditTypes;
 using utau_overflags.Edits;
+using Utau.OverFlags.Domain.Commands.Flags;
+using Utau.OverFlags.Domain.Choices;
+using Utau.OverFlags.Domain.Attributes.Flags;
+using Utau.OverFlags.Domain.Attributes;
 
 namespace utau_overflags.Attributes.Flags
 {
@@ -15,7 +12,7 @@ namespace utau_overflags.Attributes.Flags
         public FlagsEditControl()
         {
             InitializeComponent();
-            InitializeComboBox(comboEditType, new EditTypeParser());
+            InitializeComboBox(comboEditType, new EditTypeChoice());
         }
 
         public FlagsEditControl(FlagsEdit edit)
@@ -36,9 +33,9 @@ namespace utau_overflags.Attributes.Flags
             return edit;
         }
 
-        private EditType CreateEditType(string method, string word)
+        private FlagsCommand CreateEditType(string method, string word)
         {
-            EditTypeParser parser = new EditTypeParser();
+            EditTypeChoice parser = new EditTypeChoice();
             return parser.Parse(method, word);
         }
 

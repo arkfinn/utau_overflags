@@ -4,6 +4,8 @@ using System.IO;
 using System.Windows.Forms;
 using Utau.Domain.Scores;
 using Utau.Elements;
+using Utau.OverFlags.Application.Presets;
+using Utau.OverFlags.Domain.Contracts;
 using utau_overflags.Forms;
 
 namespace utau_overflags
@@ -190,7 +192,7 @@ namespace utau_overflags
                 else
                 {
                     var preset = new PresetController();
-                    ContractList n = ContractList.FromFile(preset.FindPath(new_preset));
+                    ContractList n = new LoadPresetUseCase(preset.FindPath(new_preset)).Execute();
 
                     if (n != null)
                     {

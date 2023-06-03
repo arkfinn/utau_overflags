@@ -1,6 +1,14 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Flags;
+using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes.Lyric;
+using Utau.OverFlags.Domain.Attributes.Moduration;
+using Utau.OverFlags.Domain.Attributes.Note;
+using Utau.OverFlags.Domain.Attributes.Others;
+using Utau.OverFlags.Domain.Attributes.Vibrato;
 using utau_overflags.Attributes.Flags;
 using utau_overflags.Attributes.Intensity;
 using utau_overflags.Attributes.Length;

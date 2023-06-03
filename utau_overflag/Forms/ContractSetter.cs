@@ -6,7 +6,8 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using utau_overflags.Conditions;
-using utau_overflags.Edits;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Contracts;
 
 namespace utau_overflags.Forms
 {

@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 using Utau.Domain.Flags;
-using Utau.OverFlags.Domain.CalculateCommands;
+using Utau.OverFlags.Domain.Commands.Calculations;
 
 namespace Utau.OverFlags.Domain.Flags
 {

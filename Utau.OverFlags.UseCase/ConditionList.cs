@@ -7,6 +7,7 @@ using System.IO;
 using utau_overflags.OldSetting;
 using System.Diagnostics;
 using System.Xml;
+using Utau.OverFlags.Domain.Contracts;
 
 namespace utau_overflags
 {

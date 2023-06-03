@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using Utau.OverFlags.Domain.Choices;
 
 namespace utau_overflags.Attributes
 {
@@ -23,7 +24,7 @@ namespace utau_overflags.Attributes
             changed = false;
         }
 
-        protected void InitializeComboBox(ComboBox combo, ChoiceSet wordset)
+        protected void InitializeComboBox(ComboBox combo, IChoicable wordset)
         {
             combo.BeginUpdate();
             foreach (string word in wordset.Choices)

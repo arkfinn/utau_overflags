@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using Utau.OverFlags.Domain.Contracts;
 
 namespace utau_overflags.OldSetting
 {

@@ -5,8 +5,11 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using utau_overflags.Attributes.Lyric.WordLikes;
 using utau_overflags.Conditions;
+using Utau.OverFlags.Domain.Commands.WordLikes;
+using Utau.OverFlags.Domain.Choices;
+using Utau.OverFlags.Domain.Attributes.Lyric;
+using Utau.OverFlags.Domain.Attributes;
 
 namespace utau_overflags.Attributes.Lyric
 {
@@ -23,9 +26,9 @@ namespace utau_overflags.Attributes.Lyric
             Import(condition);
         }
 
-        private MatchingParser CreateParser()
+        private MatchingChoice CreateParser()
         {
-            return new MatchingParser();
+            return new MatchingChoice();
         }
 
         private void formChanged(object sender, EventArgs e)

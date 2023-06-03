@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using Utau.Elements;
-using utau_overflags.Attributes.Comparers;
-using utau_overflags.Attributes.Flags;
-using utau_overflags.Attributes.Intensity;
-using utau_overflags.Attributes.Length;
-using utau_overflags.Attributes.Lyric;
-using utau_overflags.Attributes.Moduration;
-using utau_overflags.Attributes.Note;
-using utau_overflags.Attributes.Vibrato;
-using utau_overflags.Conditions;
-using utau_overflags.Edits;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Flags;
+using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes.Length;
+using Utau.OverFlags.Domain.Attributes.Lyric;
+using Utau.OverFlags.Domain.Attributes.Moduration;
+using Utau.OverFlags.Domain.Attributes.Note;
+using Utau.OverFlags.Domain.Attributes.Vibrato;
+using Utau.OverFlags.Domain.Commands.Comparers;
+using Utau.OverFlags.Domain.Contracts;
 
 namespace utau_overflags
 {

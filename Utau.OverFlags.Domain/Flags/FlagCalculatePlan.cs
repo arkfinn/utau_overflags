@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Utau.Domain.Flags;
 using Utau.Domain.Flags.FlagTypes;
-using Utau.OverFlags.Domain.CalculateCommands;
+using Utau.OverFlags.Domain.Commands.Calculations;
 
 namespace Utau.OverFlags.Domain.Flags
 {

@@ -6,6 +6,8 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using utau_overflags.Edits;
+using Utau.OverFlags.Domain.Attributes;
+using Utau.OverFlags.Domain.Attributes.Vibrato;
 
 namespace utau_overflags.Attributes.Vibrato
 {
