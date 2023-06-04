@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml;
+using Utau.OverFlags.Application.OldSetting;
 using Utau.OverFlags.Domain.Attributes;
 using Utau.OverFlags.Domain.Attributes.Flags;
 using Utau.OverFlags.Domain.Attributes.Intensity;

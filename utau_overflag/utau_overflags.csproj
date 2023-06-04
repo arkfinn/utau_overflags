@@ -20,7 +20,7 @@
     <ProjectReference Include="..\Utau.OverFlags.UseCase\Utau.OverFlags.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Attributes\Note\NoteEditControl.cs" />
+    <Compile Update="DataEntry\Attributes\Note\NoteEditControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Update="plugin.txt">
