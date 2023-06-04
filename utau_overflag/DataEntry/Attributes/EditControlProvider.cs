@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using Utau.OverFlags.Domain.Attributes;
 using Utau.OverFlags.Domain.Attributes.Flags;
 using Utau.OverFlags.Domain.Attributes.Intensity;
+using Utau.OverFlags.Domain.Attributes.Length;
 using Utau.OverFlags.Domain.Attributes.Lyric;
 using Utau.OverFlags.Domain.Attributes.Moduration;
 using Utau.OverFlags.Domain.Attributes.Note;
@@ -36,6 +37,7 @@ namespace utau_overflags.DataEntry.Attributes
             {
                 nameof(FlagsEdit) => new FlagsEditControl(item as FlagsEdit),
                 nameof(IntensityEdit) => new IntensityEditControl(item as IntensityEdit),
+                nameof(LengthEdit) => new LengthEditControl(item as LengthEdit),
                 nameof(LyricEdit) => new LyricEditControl(item as LyricEdit),
                 nameof(ModurationEdit) => new ModurationEditControl(item as ModurationEdit),
                 nameof(NoteEdit) => new NoteEditControl(item as NoteEdit),

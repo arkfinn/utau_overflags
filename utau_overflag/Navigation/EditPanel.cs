@@ -8,6 +8,7 @@ using Utau.OverFlags.Domain.Attributes.Flags;
 using Utau.OverFlags.Domain.Attributes.Vibrato;
 using Utau.OverFlags.Domain.Attributes.Others;
 using Utau.OverFlags.Domain.Attributes.Note;
+using Utau.OverFlags.Domain.Attributes.Length;
 
 namespace utau_overflags.Forms
 {
@@ -57,6 +58,11 @@ namespace utau_overflags.Forms
         private void button8_Click(object sender, EventArgs e)
         {
             invokeButtonClicked(new NoteEdit());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            invokeButtonClicked(new LengthEdit());
         }
     }
 

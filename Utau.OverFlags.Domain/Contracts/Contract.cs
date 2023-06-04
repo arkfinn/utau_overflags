@@ -32,6 +32,7 @@ namespace Utau.OverFlags.Domain.Contracts
         public List<CondBase> Conditions;
 
         [XmlElement(typeof(EditBase))]
+        [XmlElement(typeof(LengthEdit))]
         [XmlElement(typeof(LyricEdit))]
         [XmlElement(typeof(IntensityEdit))]
         [XmlElement(typeof(ModurationEdit))]

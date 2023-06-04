@@ -20,6 +20,9 @@
     <ProjectReference Include="..\Utau.OverFlags.UseCase\Utau.OverFlags.Application.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="DataEntry\Attributes\Length\LengthEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="DataEntry\Attributes\Note\NoteEditControl.cs" />
   </ItemGroup>
   <ItemGroup>
