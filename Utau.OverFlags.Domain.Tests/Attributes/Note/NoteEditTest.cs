@@ -19,14 +19,16 @@ namespace Utau.OverFlags.Domain.Attributes.Note
             var elm = new UtauElement();
             var edit = new NoteEdit(noteNum);
 
-            edit.Edit(elm);
+            var result = edit.Edit(elm);
 
+            Assert.That(result, Is.True);
             Assert.That(elm.NoteNum, Is.EqualTo(noteNum));
         }
 
         [TestCase(60, "C4")]
         [TestCase(61, "C#4")]
-        public void ToStringTest(int noteNum, string noteLabel) {
+        public void ToStringTest(int noteNum, string noteLabel)
+        {
             var edit = new NoteEdit(noteNum);
             Assert.That(edit.ToString(), Is.EqualTo($"音階を{noteLabel}に変更"));
         }

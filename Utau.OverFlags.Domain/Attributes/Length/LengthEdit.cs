@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 using Utau.Elements;
 using Utau.OverFlags.Domain.Commands.Calculations;
 
@@ -29,7 +24,7 @@ namespace Utau.OverFlags.Domain.Attributes.Length
 
         override protected bool RunEdit(UtauElement elm)
         {
-            elm.Intensity = Calculator.Calculate(elm.Length);
+            elm.Length = Calculator.Calculate(elm.Length);
             return true;
         }
 
