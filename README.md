@@ -13,3 +13,6 @@ OverFlagsはUTAU用の作業効率化を目的としたプラグインです。
 .NET 10.0をインストールした環境で、UTAUやOpenUtauの利用方法に従って導入してください。
 
 詳しくはreadme.txtを参照してください。
+
+## 配布元
+- [A-9](https://arkfinn2775.stars.ne.jp/)
