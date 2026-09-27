@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
@@ -26,12 +26,14 @@ namespace utau_overflags.DataDisplay
             UpdateListButtonsEnabled();
         }
 
+        [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public object SelectedItem
         {
             get { return listBox1.SelectedItem; }
             set { listBox1.SelectedItem = value; }
         }
 
+        [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
         {
             get { return listBox1.SelectedIndex; }
@@ -88,6 +90,8 @@ namespace utau_overflags.DataDisplay
         }
 
         private int _MinimumCount = 1;
+
+        [System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public int MinimumCount
         {
             get { return _MinimumCount; }

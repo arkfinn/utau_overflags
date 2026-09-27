@@ -1,15 +1,18 @@
 # OverFlags for UTAU Plugin
 [![.NET Core Desktop CI](https://github.com/arkfinn/utau_overflags/actions/workflows/dotnet-desktop-ci.yml/badge.svg)](https://github.com/arkfinn/utau_overflags/actions/workflows/dotnet-desktop-ci.yml)
 
-OverFlags��UTAU�p�̍�ƌ�������ړI�Ƃ����v���O�C���ł��B
+OverFlagsはUTAU用の作業効率化を目的としたプラグインです。
 
-�w�肵�������ɍ��킹�ăm�[�g�̑�����s�����Ƃ��ł��܂��B
-���Ƃ��΁A����̉��K�̂݉��ʂ�ς���Ƃ��������삪�\�ł��B
+指定した条件に合わせてノートの操作を行うことができます。
+たとえば、特定の音階のみ音量を変えるといった操作が可能です。
 
-�܂��AFlags�̑���ɂ��ẮA�Ǝ��̋L�@��p���邱�ƂŁA������Flags����ꕔ�̒l�݂̂����������E�v�Z���邱�Ƃ��ł��܂��B
+また、Flagsの操作については、独自の記法を用いることで、既存のFlagsから一部の値のみを書き換え・計算することができます。
 
-## �g����
+## 使い方
 [![Download](https://img.shields.io/badge/Download-Windows-blue?logo=github)](https://github.com/arkfinn/utau_overflags/releases/latest/download/a-9_overflags.zip)</br>
-.Net6.0���C���X�g�[���������ŁAUTAU��OpenUtau�̗��p���@�ɏ]���ē������Ă��������B
+.NET 10.0をインストールした環境で、UTAUやOpenUtauの利用方法に従って導入してください。
 
-�ڂ�����readme.txt���Q�Ƃ��Ă��������B
+詳しくはreadme.txtを参照してください。
+
+## 配布元
+- [A-9](https://arkfinn2775.stars.ne.jp/)
